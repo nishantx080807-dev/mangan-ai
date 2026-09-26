@@ -21,6 +21,19 @@ Do NOT modify application code unless explicitly instructed.
 11. Do not force-push Git branches.
 12. Do not modify unrelated files.
 
+
+
+
+### Explicitly Approved Cleanup Exception
+
+The repository currently permits one narrowly scoped deletion:
+
+- The obsolete root `package-lock.json` may be deleted if Session 0 confirms that it is a stray/obsolete artifact and that no repository workflow depends on it.
+- No other existing file may be deleted under this exception.
+- Do not use this exception to delete, rename, replace, or consolidate any other lockfile or project file.
+- Before deletion, verify the file is tracked, confirm its repository role, and document the reason.
+- The deletion must be isolated in its own small commit.
+
 ## Architecture Principles
 
 Keep these concerns logically separated:
