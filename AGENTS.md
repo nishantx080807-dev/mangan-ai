@@ -31,7 +31,7 @@ The repository currently permits one narrowly scoped deletion:
 - The obsolete root `package-lock.json` may be deleted if Session 0 confirms that it is a stray/obsolete artifact and that no repository workflow depends on it.
 - No other existing file may be deleted under this exception.
 - Do not use this exception to delete, rename, replace, or consolidate any other lockfile or project file.
-- Before deletion, verify the file is tracked, confirm its repository role, and document the reason.
+- Before deletion, verify the file exists, confirm whether it is tracked or untracked, confirm its repository role, and document the reason.
 - The deletion must be isolated in its own small commit.
 
 ## Architecture Principles
